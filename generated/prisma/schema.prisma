@@ -10,7 +10,7 @@ datasource db {
 
 model Items {
   id           Int    @id @default(autoincrement())
-  name         String
+  name         String @unique
   phone        String
   address      String
   usedMedicine String

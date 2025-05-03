@@ -2010,14 +2010,14 @@ export namespace Prisma {
 
   export type ItemsWhereUniqueInput = Prisma.AtLeast<{
     id?: number
+    name?: string
     AND?: ItemsWhereInput | ItemsWhereInput[]
     OR?: ItemsWhereInput[]
     NOT?: ItemsWhereInput | ItemsWhereInput[]
-    name?: StringFilter<"Items"> | string
     phone?: StringFilter<"Items"> | string
     address?: StringFilter<"Items"> | string
     usedMedicine?: StringFilter<"Items"> | string
-  }, "id">
+  }, "id" | "name">
 
   export type ItemsOrderByWithAggregationInput = {
     id?: SortOrder
